@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NoteFlow 個人學習知識庫：整理課堂筆記，串連概念，保留每一份知識的來源。">
+  <title>NoteFlow｜AI 筆記整理知識庫</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232e5147'/%3E%3Ctext x='10' y='29' fill='white' font-size='27'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="data/notes.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到筆記內容</a>
+  <aside class="sidebar">
+    <a class="brand" href="./index.html" aria-label="NoteFlow 首頁"><span class="brand-mark">N<span>·</span></span><span>NoteFlow<small>個人學習知識庫</small></span></a>
+    <div class="nav-label">你的知識空間 <span>WORKSPACE</span></div>
+    <nav id="categories" aria-label="筆記分類"></nav>
+    <div class="sidebar-section"><h2>探索標籤</h2><div id="tag-cloud" class="tag-cloud"></div></div>
+    <div class="sidebar-foot"><span class="status-dot"></span> 讓零散的想法，慢慢連成知識。<small>原始筆記 → 整理 → 建立關聯</small></div>
+  </aside>
+  <main id="main">
+    <header class="topbar"><span>知識庫 <span class="slash">/</span> <span id="breadcrumb">全部筆記</span></span><span class="quiet-label">持續學習，持續累積 <span class="small-mark">↗</span></span></header>
+    <section class="intro"><div class="eyebrow">A SPACE FOR YOUR KNOWLEDGE</div><h1>把筆記，連成知識。</h1><p>整理每一次學習，找到想法之間的連結。</p></section>
+    <section id="statistics" class="statistics" aria-label="知識庫統計"></section>
+    <section class="library" aria-labelledby="library-title">
+      <div class="section-heading"><div><span class="section-number">01 /</span><h2 id="library-title">所有筆記</h2><span id="result-count" class="count" aria-live="polite"></span></div><label class="sort-label">排序 <select id="sort"><option value="recent">最近更新</option><option value="title">標題名稱</option></select></label></div>
+      <div class="search-wrap"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><label class="sr-only" for="search">搜尋筆記、重點或標籤</label><input id="search" type="search" placeholder="搜尋筆記、重點或標籤…" autocomplete="off"><kbd aria-hidden="true">/</kbd></div>
+      <div id="active-filters" class="active-filters" hidden></div>
+      <div id="notes-grid" class="notes-grid"></div>
+      <div id="empty" class="empty" hidden><span>⌕</span><h3>還沒有符合的筆記</h3><p>換個關鍵字，或清除篩選再試一次。</p><button id="reset-empty" class="primary-button">清除所有篩選</button></div>
+    </section>
+    <section class="recent" aria-labelledby="recent-title"><div class="section-heading"><div><span class="section-number">02 /</span><h2 id="recent-title">最近更新</h2></div><span class="muted">讓知識保持新鮮</span></div><div id="recent-list"></div></section>
+    <footer><span>NoteFlow <span class="footer-dot">·</span> AI 筆記整理知識庫</span><span>每個概念，都有跡可循。</span></footer>
+  </main>
+  <dialog id="detail" aria-labelledby="detail-title"><div class="dialog-bar"><span>NOTE / 知識筆記</span><button id="close-detail" class="text-button" aria-label="關閉筆記詳情">關閉 <span aria-hidden="true">×</span></button></div><article id="detail-content"></article></dialog>
+</body>
+</html>
