@@ -46,7 +46,7 @@ assets/js/app.js           render 與互動
 4. 等待 GitHub 完成部署，再開啟 Pages 顯示的網址。專案網站通常位於 `https://帳號.github.io/repository/`。
 5. 在正式網址重新檢查搜尋、詳情與原始來源連結。所有本地資源皆採相對路徑。
 
-部署設定依 [GitHub 官方說明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)；`.nojekyll` 的用途見 [建立 GitHub Pages 網站](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)。此專案已具備靜態發布檔案，尚未連接或發布到遠端 repository。
+部署設定依 [GitHub 官方說明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)；`.nojekyll` 的用途見 [建立 GitHub Pages 網站](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)。此專案已上傳至 GitHub Repository，並成功部署至 GitHub Pages，網站可透過公開網址正常瀏覽。
 
 ## 新增原始筆記
 
